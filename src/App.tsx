@@ -2,9 +2,9 @@ import  Navbar  from '@/scenes/Navbar';
 import { useState, useEffect } from 'react';
 import { SelectedPage } from './shared/type';
 import { Home } from './scenes/Home';
-import { Benefits } from './scenes/Benefits';
-import { OurClasses } from './scenes/OurClasses';
-import { ContactUs } from './scenes/ContactUs';
+// import { Benefits } from './scenes/Benefits';
+// import { OurClasses } from './scenes/OurClasses';
+// import { ContactUs } from './scenes/ContactUs';
 
 
 function App() {

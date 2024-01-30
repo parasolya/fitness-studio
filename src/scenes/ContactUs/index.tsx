@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-export const ContactUs = (props: Props) => {
+export const ContactUs = () => {
   return (
     <div>ContactUs</div>
   )

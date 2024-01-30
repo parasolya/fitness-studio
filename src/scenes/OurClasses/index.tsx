@@ -1,8 +1,8 @@
-import React from 'react'
 
-type Props = {}
 
-export const OurClasses = (props: Props) => {
+
+
+export const OurClasses = () => {
   return (
     <div>OurClasses</div>
   )

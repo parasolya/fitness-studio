@@ -1,8 +1,8 @@
-import React from 'react'
 
-type Props = {}
 
-export const Benefits = (props: Props) => {
+
+
+export const Benefits = () => {
   return (
     <div>Benefits</div>
   )
