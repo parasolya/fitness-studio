@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@700&display=swap" rel="stylesheet');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#rood,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: DM Sant, sans-serif;
+    @apply bg-gray-20 text-gray-500;
+}
