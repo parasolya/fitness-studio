@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -28,4 +28,4 @@ jobs:
         git config --global user.name "GitHub Actions"
         git add .
         git commit -m "Deploy changes"
-        git push origin main:gh-pages
+        git push origin master:gh-pages
