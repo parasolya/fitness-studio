@@ -1,6 +1,6 @@
 // tsrafce     tsr
 import { Link } from './Link';
-import { SelectedPage } from '@/shared/type';
+import { SelectedPage } from '@/shared/types';
 import { useState } from 'react';
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Logo from '@/assets/Logo.png';
@@ -50,7 +50,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         setSelectedPage={setSelectedPage}/>
             </div>
             <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <p className=' hover:text-primary-300 '>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>
