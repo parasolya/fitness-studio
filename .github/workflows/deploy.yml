@@ -28,5 +28,5 @@ jobs:
         git config --global user.name "parasolya"
         git add .
         git commit -m "Deploy changes"
-        git pull origin gh-pages  # Оновлення локальної гілки gh-pages
+        git pull origin gh-pages --allow-unrelated-histories  # Оновлення локальної гілки gh-pages, дозволяючи неспільні історії
         git push origin master:gh-pages
