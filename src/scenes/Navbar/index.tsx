@@ -23,49 +23,58 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
   return (
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <div
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+      >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-              <img src={Logo} alt='logo' />
-          </div>
-        {isAboveMediumScreens ? (
-          <div className={`${flexBetween} w-full`}>
-            <div className={`${flexBetween} gap-8 text-sm`}>
-        <Link 
-        page="Home" 
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}        
-        />
-         <Link 
-        page="Benefits" 
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}/>
-         <Link 
-        page="Our Classes" 
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}/>
-        <Link 
-        page="Contact Us" 
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}/>
-            </div>
-            <div className={`${flexBetween} gap-8`}>
-                  <p className=' hover:text-primary-300 '>Sign In</p>
+            {/* LEFT SIDE */}
+            <img alt="logo" src={Logo} />
+
+            {/* RIGHT SIDE */}
+            {isAboveMediumScreens ? (
+              <div className={`${flexBetween} w-full`}>
+                <div className={`${flexBetween} gap-8 text-sm`}>
+                  <Link
+                    page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Benefits"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Our Classes"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Contact Us"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </div>
+                <div className={`${flexBetween} gap-8`}>
+                  <p className='hover:text-secondary-500'>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>
-            </div>
+                </div>
+              </div>
+            ) : (
+              <button
+                className="rounded-full bg-secondary-500 p-2"
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+              >
+                <Bars3Icon className="h-6 w-6 text-white" />
+              </button>
+            )}
           </div>
-        ) : (
-            <button
-              className="rounded-full bg-secondary-500 p-2"
-              onClick={() => setIsMenuToggled(!isMenuToggled)}
-            >
-              <Bars3Icon className="h-6 w-6 text-white" />
-            </button>
-        )}
         </div>
       </div>
+
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
         <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
@@ -102,7 +111,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

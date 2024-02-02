@@ -13,7 +13,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void,
 }
 
-export const Home = ({setSelectedPage}: Props) => {
+export const Home = ({ setSelectedPage }: Props) => {
 
   const flexBetween = " flex items-center justify-between";
 
@@ -88,17 +88,17 @@ export const Home = ({setSelectedPage}: Props) => {
       </motion.div>
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-      <div className="h-[150px] w-full bg-primary-100 py-10">
-      <div className="mx-auto w-5/6">
-      <div className={ `${flexBetween} gap-8 w-3/5`}>
-            <img src={SponsorRedBull} alt='Red Bull'/>          
-            
-            <img src={SponsorForbes} alt='HomePage Text'/>
-            
-            <img src={SponsorFortune} alt='HomePage Text'/>
+        <div className="h-[150px] w-full bg-primary-100 py-10">
+          <div className="mx-auto w-5/6">
+            <div className={`${flexBetween} gap-8 w-3/5`}>
+              <img src={SponsorRedBull} alt='Red Bull' />
+
+              <img src={SponsorForbes} alt='HomePage Text' />
+
+              <img src={SponsorFortune} alt='HomePage Text' />
             </div>
-      </div>
-      </div>
+          </div>
+        </div>
       )}
     </section>
   )

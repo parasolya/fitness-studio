@@ -32,7 +32,7 @@ function App() {
         isTopOfPage={isTopOfPage}
         /> 
         < Home setSelectedPage={setSelectedPage} />
-        <Benefits />
+        < Benefits setSelectedPage={setSelectedPage} />
         {/* <OurClasses /> */}
         {/* <ContactUs />  */}
       </div>

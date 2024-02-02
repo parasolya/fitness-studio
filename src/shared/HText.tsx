@@ -1,9 +1,9 @@
 type Props = {
-    children: string
+    children: React.ReactNode;
 }
 
 export const HText = ({children}: Props) => {
   return (
-    <div className="text-xl">{children}</div>
+    <h1 className="basis-3/5 text-3xl font-montserrat font-bold">{children}</h1>
   )
 }
