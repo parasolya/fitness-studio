@@ -75,6 +75,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container} >
+
           {benefits.map((benefit: BenefitType) => (
             <Benefit key={benefit.title} icon={benefit.icon} title={benefit.title} description={benefit.description}
               setSelectedPage={setSelectedPage} />
