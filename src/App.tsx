@@ -4,7 +4,7 @@ import { SelectedPage } from './shared/types';
 import { Home } from './scenes/Home';
 import { Benefits } from './scenes/Benefits';
 import { OurClasses } from './scenes/OurClasses';
-// import { ContactUs } from './scenes/ContactUs';
+import { ContactUs } from './scenes/ContactUs';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         < Home setSelectedPage={setSelectedPage} />
         < Benefits setSelectedPage={setSelectedPage} />
         <OurClasses setSelectedPage={setSelectedPage} />
-        {/* <ContactUs />  */}
+        <ContactUs setSelectedPage={setSelectedPage} /> 
       </div>
       
     </>
