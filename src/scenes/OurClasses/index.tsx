@@ -79,6 +79,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
             {classes.flatMap((item: ClassesType, index) => {
               return (
                 <Class
+                  key={item.name + index}
                   index={index}
                   name={item.name}
                   description={item.description}

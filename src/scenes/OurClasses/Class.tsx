@@ -13,7 +13,7 @@ function Class({ name, description, image, index }: Props) {
   opacity-0 transition duration-500 hover:opacity-90`;
 
     return (
-        <li className="relative mx-5 inline-block h-[380px] w-[450px]" key={name + index}>
+        <li className="relative mx-5 inline-block h-[380px] w-[450px]">
             <div className={overlayStyles}>
                 <p className="text-2xl">{name}</p>
                 <p className="mt-5">{description}</p>
