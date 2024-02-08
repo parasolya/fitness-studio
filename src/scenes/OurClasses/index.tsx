@@ -80,7 +80,6 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
               return (
                 <Class
                   key={item.name + index}
-                  index={index}
                   name={item.name}
                   description={item.description}
                   image={item.image}
