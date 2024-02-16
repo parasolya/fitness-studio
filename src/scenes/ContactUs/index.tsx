@@ -10,7 +10,7 @@ type Props = {
 
 export const ContactUs = ({ setSelectedPage }: Props) => {
 
- 
+
 
   const inputStyles = `focus:caret-primary-400 outline-none w-full p-4 rounded-lg bg-primary-300 placeholder-white text-primary-400 border-2 border-primary-300 transition duration-500  focus:border-primary-500 hover:border-primary-500`;
 
@@ -18,6 +18,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
     register,
     trigger,
     formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = async (e: any) => {
@@ -25,6 +26,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
     if (!isValid) {
       e.preventDefault();
     }
+    reset()
   };
 
   return (
@@ -66,8 +68,8 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
               action="https://formsubmit.co/ola.shevchuk@gmail.com"
               method="POST"
             >
-              <input type="hidden" name="_captcha" value="false"/>
-              <input type="hidden" name="_subject" value="fitness-studio-New submission!"/>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="fitness-studio-New submission!" />
               <input type="hidden" name="_next" value="http://localhost:5173/fitness-studio/src/scenes/Thanks/thanks.html"></input>
               <input
                 className={inputStyles}
@@ -131,10 +133,10 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
               )}
               <button
                 className="w-52 py-3 text-primary-400 transition duration-500 hover:text-white bg-secondary-500 rounded-lg"
-                type="submit"                
+                type="submit"
               >SUBMIT</button>
             </form>
-            
+
           </motion.div>
           <motion.div
             className="basis-2/5 mt-16 md:mt-0 "
