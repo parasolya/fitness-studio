@@ -25,8 +25,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
-    }
-    reset()
+    } else reset();   
   };
 
   return (
@@ -70,7 +69,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
             >
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value="fitness-studio-New submission!" />
-              <input type="hidden" name="_next" value="http://localhost:5173/fitness-studio/src/scenes/Thanks/thanks.html"></input>
+              <input type="hidden" name="_next" value="http://localhost:5173/fitness-studio/src/scenes/Thanks/thanks.html"/>
               <input
                 className={inputStyles}
                 type="text"
@@ -117,18 +116,18 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
                 placeholder="Message"
                 rows={4}
                 cols={5}
-                {...register("massage", {
+                {...register("message", {
                   required: true,
                   maxLength: 2000,
                 })}
               />
-              {errors.massage && (
+              {errors.message && (
                 <p className="-mt-2 text-primary-500 mb-1" style={{ visibility: 'visible' }}>
-                  {errors.massage.type === "required" && "This field is required."}
-                  {errors.massage.type === "maxLength" && "Max length is 2000 char."}
+                  {errors.message.type === "required" && "This field is required."}
+                  {errors.message.type === "maxLength" && "Max length is 2000 char."}
                 </p>
               )}
-              {!errors.massage && (
+              {!errors.message && (
                 <p className="-mt-2 text-primary-500 mb-1" style={{ visibility: 'hidden' }}>This field is required.</p>
               )}
               <button

@@ -1,6 +1,6 @@
 import { Link } from './Link';
 import { SelectedPage } from '@/shared/types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Logo from '@/assets/Logo.png';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -20,9 +20,24 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      const navbar = document.getElementById('navbar');
+      if (navbar && !navbar.contains(event.target)) {
+        setIsMenuToggled(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav>
-      <div
+      <div        
         className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
@@ -77,7 +92,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div id="navbar" className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
