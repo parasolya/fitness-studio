@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body,
 html,
 #rood,
@@ -11,5 +12,10 @@ html,
     height: 100%;
     width: 100%;
     font-family: DM Sant, sans-serif;
-    @apply bg-gray-20 text-gray-500;
+    @apply bg-gray-20 text-gray-500;    
+}
+
+input {
+    box-shadow: 0 0 0px 1000px #FFA6A3 inset !important; 
+   
 }

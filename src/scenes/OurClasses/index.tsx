@@ -67,11 +67,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
           }}>
           <div className="md:w-3/5">
             <HText>OUR CLASSES</HText>
-            <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.</p>
+            <p className="py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, fugiat perferendis! Repudiandae, pariatur sit minima, molestias, quia unde inventore adipisci rerum distinctio veritatis sunt dolores optio esse praesentium tempore error at eos fuga? Dolorum asperiores accusantium provident voluptate labore nulla!</p>
           </div>
         </motion.div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
