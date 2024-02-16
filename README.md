@@ -1,4 +1,4 @@
-#Fitness studio ![](./src/assets/favicon.svg)
+# Fitness studio ![](./src/assets/favicon.svg)
 
 
 _Site for a fitness studio_ 
@@ -10,7 +10,7 @@ __Pages:__
   * Benefits
   * Contact Us 
   <img src="./src/assets/image2.png" width=300/>
-  ___
+___
 
 __Used:__ 
  React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll 
