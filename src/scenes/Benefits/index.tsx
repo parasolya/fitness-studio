@@ -20,7 +20,7 @@ const container = {
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
-}
+};
 
 const benefits: Array<BenefitType> = [
   {
@@ -89,7 +89,6 @@ export const Benefits = ({ setSelectedPage }: Props) => {
           <img className='mx-auto' alt='grafic-benefits' src={BenefitsPageGraphic} />
 
           {/* DESCRIPTION */}
-
           <div className='relative'>
             <div className='before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves'>
               <motion.div
@@ -123,7 +122,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
               <p className="my-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates omnis, error dolore quo repellat aut quasi sed, saepe voluptatum expedita mollitia laborum earum quod praesentium quidem aperiam voluptatibus perspiciatis reprehenderit unde commodi quam ea dolorum, dolorem illum. Ducimus quia saepe repellendus sequi deserunt sed ab.
               </p>
-              <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto fuga culpa distinctio aliquid repudiandae incidunt quod, recusandae ex eveniet accusantium quisquam quibusdam deserunt. Distinctio! 
+              <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto fuga culpa distinctio aliquid repudiandae incidunt quod, recusandae ex eveniet accusantium quisquam quibusdam deserunt. Distinctio!
               </p>
             </motion.div>
 

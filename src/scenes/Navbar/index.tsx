@@ -1,4 +1,3 @@
-// tsrafce     tsr
 import { Link } from './Link';
 import { SelectedPage } from '@/shared/types';
 import { useState } from 'react';
@@ -13,7 +12,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
   const flexBetween = "flex items-center justify-between";
 
@@ -28,6 +27,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
+
             {/* LEFT SIDE */}
             <img alt="logo" src={Logo} />
 

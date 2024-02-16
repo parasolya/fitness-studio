@@ -8,5 +8,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, "src") }]
   },
-  base: '/fitness-studio/', // Замініть це на шлях вашого репозиторію на GitHub
+  base: '/fitness-studio/', 
 });

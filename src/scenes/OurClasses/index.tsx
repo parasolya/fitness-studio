@@ -7,7 +7,7 @@ import image3 from '@/assets/image3.png';
 import image4 from '@/assets/image4.png';
 import image5 from '@/assets/image5.png';
 import image6 from '@/assets/image6.png';
-import Class from './Class'
+import Class from './Class';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -85,7 +85,6 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
           </ul>
         </div>
       </motion.div>
-
     </section>
   )
 }

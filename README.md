@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+#Fitness studio ![](./src/assets/favicon.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+_Site for a fitness studio_ 
+___
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+__Pages:__      
+  * Home
+  * OurClasses
+  * Benefits
+  * Contact Us 
+  <img src="./src/assets/image2.png" width=300/>
+  ___
 
-## Expanding the ESLint configuration
+__Used:__ 
+ React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+ <img src="./src/assets/react-logo.png" width=50 height=50/>
+ <img src="./src/assets/typescript-logo.png" width=50 />
+ <img src="./src/assets/tailwind-logo.png" width=100/>
+ <img src="./src/assets/framer-motion-logo.png" width=80>
+ <img src="./src/assets/html5-logo.png" width=70>
+ <img src="./src/assets/form-submit-logo.png" width=100>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ 
