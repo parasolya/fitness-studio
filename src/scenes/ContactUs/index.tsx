@@ -29,7 +29,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="w-full pt-24 pb-32">
+    <section id="contactus" className="w-full pt-40 pb-32">
       <motion.div
         className="w-5/6 mx-auto "
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>

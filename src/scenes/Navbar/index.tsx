@@ -7,12 +7,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import ActionButton from "@/shared/ActionButton";
 
 type Props = {
-  isTopOfPage: boolean;
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
+  isTopOfPage: boolean,
+  selectedPage: SelectedPage,
+  setSelectedPage: (value: SelectedPage) => void,
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
   const flexBetween = "flex items-center justify-between";
 
@@ -54,21 +54,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
@@ -106,21 +110,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
             <Link
               page="Benefits"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
             <Link
               page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
             <Link
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
           </div>
         </div>
