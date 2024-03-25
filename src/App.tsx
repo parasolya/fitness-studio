@@ -8,11 +8,16 @@ import { ContactUs } from './scenes/ContactUs';
 import { Footer } from './scenes/Footer';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
-
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
+  // useEffect(() => {  
+  //   console.log(selectedPage);
+  //   console.log(isTopOfPage);
+  // }, [selectedPage, isTopOfPage]);
+
   useEffect(() => {
+    console.log(window.scrollY)
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
@@ -23,7 +28,7 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  
   return (
     <>
       <div className="app">
